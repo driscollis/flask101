@@ -1,0 +1,15 @@
+<doctype html>
+<title>Edit Album - Flask Music Database</title>
+<h2>Edit Album</h2>
+
+{% from "_formhelpers.html" import render_field %}
+<form method=post>
+    <dl>
+        {{ render_field(form.artist) }}
+        {{ render_field(form.title) }}
+        {{ render_field(form.release_date) }}
+        {{ render_field(form.publisher) }}
+        {{ render_field(form.media_type) }}
+    </dl>
+    <p><input type=submit value=Submit>
+</form>
